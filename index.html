@@ -3,13 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HOTEL</title>
+    <title>Hotel Oasis</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100&display=swap" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <nav>
-        <!-- logo hotel -->
+        <img src="img/logo-azul.PNG" alt="logo" class="logo" />
         <ul>
           <li>nosotros</li>
           <li>habitaciones</li>
@@ -19,20 +29,125 @@
           <li>contacto</li>
         </ul>
       </nav>
-      <!-- imagen de portada o carrusel de fotos, -->
+      <!-- imagen de portada o carrusel de fotos -->
+      <img src="img/header/imgPortada1.jpg" alt="imagen" />
     </header>
-    <main>
+    <main class="container">
       <section>
         <h2>nosotros</h2>
         <!-- breve texto de presentacion del hotel (donde se encuentra, desde que año estan, etc) que habitaciones y servicios cuenta -->
+        <img src="img/header/imgPortada2.jpg" alt="imagen" />
+        <p>
+          ¡Bienvenidos al Hotel Oasis en la hermosa ciudad de Playa Serena! Desde 1995, hemos sido un destino de elección para viajeros que buscan una
+          experiencia única en la costa este. Nuestra ubicación privilegiada en las costas de la Riviera Maya te ofrece un escape perfecto del ajetreo y el
+          bullicio de la vida cotidiana.
+        </p>
+        <p>
+          Nuestro hotel cuenta con una amplia variedad de habitaciones para satisfacer todas tus necesidades. Desde acogedoras habitaciones estándar hasta
+          lujosas suites frente al mar, cada una de nuestras habitaciones está diseñada pensando en tu comodidad y relajación. Disfruta de vistas panorámicas al
+          océano, balcones privados y todas las comodidades modernas que necesitas para una estancia inolvidable.
+        </p>
+        <p>
+          En el Hotel Oasis, te mimamos con una amplia gama de servicios de primera clase. Relájate en nuestra piscina infinita con vista al mar, disfruta de
+          una cena exquisita en nuestro restaurante gourmet y desconecta en nuestro spa de clase mundial. Para los amantes de la aventura, ofrecemos una
+          variedad de actividades emocionantes, desde deportes acuáticos hasta excursiones a la selva tropical.
+        </p>
+        <p>
+          Nuestro compromiso es brindarte una experiencia única y memorable, donde puased relajarte y recargar energías mientras te sumerges en la belleza
+          natural de este paraíso. ¡Esperamos darte la bienvenida pronto en el Hotel Oasis para que puedas vivir la escapada perfecta en Playa Serena!
+        </p>
       </section>
       <section>
         <h2>habitaciones</h2>
         <!-- cards que muestren una foto por cada tipo de habitacion con su nombre (doble, triple, cuadruple), su nivel (estandar, superior), lista de lo que tiene habitacion -->
+        <article>
+          <img src="img/habitacion/roomEstandar.jpg" alt="imagen" />
+          <h3>Habitación Estándar:</h3>
+          <p>
+            Nuestras habitaciones estándar son acogedoras y cómodas, ideales para aquellos que buscan una estancia tranquila y sin complicaciones. Disponen de
+            una cama doble, baño privado y un pequeño escritorio. Perfectas para viajeros individuales o parejas que valoran la simplicidad.
+          </p>
+        </article>
+        <article>
+          <img src="img/habitacion/roomSuperior.jpg" alt="imagen" />
+          <h3>Habitación Superior:</h3>
+          <p>
+            Las habitaciones superiores ofrecen un toque de elegancia adicional. Disfruta de una cama king-size, un baño espacioso con bañera de hidromasaje,
+            minibar, y un balcón privado con vistas panorámicas al mar. Perfectas para una escapada romántica o para quienes buscan una experiencia más lujosa.
+          </p>
+        </article>
+        <article>
+          <img src="img/habitacion/roomFamilia.jpg" alt="imagen" />
+          <h3>Suite Familiar:</h3>
+          <p>
+            Nuestras suites familiares son amplias y versátiles, diseñadas para grupos o familias. Ofrecen dos habitaciones interconectadas, una con una cama
+            king-size y la otra con dos camas individuales. Además, cuentan con un área de estar, dos baños completos y una terraza privada. Ideal para unas
+            vacaciones familiares cómodas y memorables.
+          </p>
+        </article>
+        <article>
+          <img src="img/habitacion/roomPresidencial.jpg" alt="imagen" />
+          <h3>Suite Presidencial:</h3>
+          <p>
+            La cúspide del lujo en el Hotel Oasis, nuestras suites presidenciales son un oasis de elegancia y comodidad. Cada suite cuenta con una habitación
+            principal con cama king-size, un amplio salón, comedor, cocina completa y una terraza privada con jacuzzi. Además, disfruta de servicios exclusivos
+            como mayordomo personal y acceso al club privado del hotel.
+          </p>
+        </article>
+        <p>Todas nuestras habitaciones y suites incluyen las siguientes comodidades estándar:</p>
+        <ul>
+          <li>Aire acondicionado para un ambiente agradable.</li>
+          <li>Conexión Wi-Fi de alta velocidad para mantenerse conectado.</li>
+          <li>Servicio de limpieza diario para mantener la habitación impecable.</li>
+          <li>Artículos de tocador de calidad para tu comodidad.</li>
+          <li>Televisión de pantalla plana con canales por cable.</li>
+          <li>Caja de seguridad para guardar objetos de valor de forma segura.</li>
+          <li>Minibar surtido con bebidas y aperitivos.</li>
+        </ul>
+        <p>
+          En el Hotel Oasis, nuestro objetivo es ofrecer una variedad de opciones de alojamiento para satisfacer las preferencias de todos nuestros huéspedes,
+          desde aquellos que buscan comodidades básicas hasta aquellos que desean una experiencia de lujo. ¡Esperamos que disfrutes de tu estancia con nosotros!
+        </p>
       </section>
       <section>
         <h2>servicios</h2>
         <!-- listado de todos los  servicios adicionales que ofrece el hotel (desayuno, restaurant, pileta, spa, etc) -->
+        <img src="img/servicio/restaurante.jpg" alt="imagen" />
+        <h3>Restaurante Gourmet</h3>
+        Nuestro restaurante gourmet ofrece una experiencia culinaria excepcional. Disfruta de una deliciosa selección de platos internacionales y locales en un
+        ambiente elegante y acogedor.
+        <img src="img/servicio/spa.jpg" alt="imagen" />
+        <h3>Spa de Clase Mundial</h3>
+        Relájate y rejuvenece en nuestro spa de clase mundial. Ofrecemos una variedad de tratamientos terapéuticos, masajes y terapias de bienestar para que te
+        sientas renovado y revitalizado. Masajes Relajantes: Disfruta de una variedad de masajes relajantes que incluyen opciones como masaje sueco, masaje de
+        tejido profundo y aromaterapia para aliviar la tensión y promover la relajación.
+        <ul>
+          <li>Tratamientos Faciales</li>
+          <li>Baños de Vapor y Sauna</li>
+          <li>Jacuzzi y Piscina de Hidroterapia</li>
+          <li>Tratamientos de Belleza</li>
+        </ul>
+        <img src="img/servicio/piscina.jpg" alt="imagen" />
+        <h3>Actividades Acuáticas</h3>
+        <p>
+          Para los amantes de la aventura, ofrecemos una amplia gama de actividades acuáticas, como snorkel, buceo, kayak y excursiones en barco. Descubre la
+          belleza submarina de la zona.
+        </p>
+        <img src="img/servicio/gym.jpg" alt="imagen" />
+        <h3>Gimnasio</h3>
+        <p>Mantén tu rutina de ejercicios en nuestro gimnasio completamente equipado con modernas máquinas de entrenamiento y pesas libres.</p>
+        <img src="img/servicio/clubPrivado.jpg" alt="imagen" />
+        <h3>Club Privado</h3>
+        <p>
+          Los huéspedes de suites presidenciales tienen acceso exclusivo a nuestro club privado, que ofrece desayuno gourmet, aperitivos durante el día y
+          bebidas premium.
+        </p>
+        <img src="img/servicio/salonEventos.jpg" alt="imagen" />
+        <h3>Salon para eventos</h3>
+        <p>
+          Organizamos eventos especiales y bodas en un entorno idílico frente al mar. Nuestro equipo de planificación de eventos se encargará de todos los
+          detalles para que tu ocasión sea inolvida
+        </p>
       </section>
       <section>
         <h2>galería</h2>
@@ -41,26 +156,95 @@
       <section>
         <h2>reservas</h2>
         <!-- condiciones del hotel (horarios de checkin/checkout, horario desayuno, metodos de pago, etc) -->
+        <h3>Check-In y Check-Out:</h3>
+        <p>
+          El horario de check-in es a partir de las 15:00 horas (3:00 PM) para asegurarnos de que tu habitación esté lista y en perfectas condiciones para tu
+          llegada. El check-out debe realizarse antes de las 12:00 horas (12:00 PM) del día de salida. Si deseas un check-out tardío, por favor, consulta con
+          recepción la disponibilidad y las tarifas adicionales.
+        </p>
+        <h3>Horario de Desayuno:</h3>
+        <p>
+          Nuestro desayuno se sirve diariamente en el restaurante desde las 7:00 AM hasta las 10:30 AM. Ofrecemos una variedad de opciones de desayuno, desde
+          platos calientes hasta buffet continental.
+        </p>
+        <h3>Política de Cancelación:</h3>
+        <p>
+          Nuestra política de cancelación varía según el tipo de tarifa que selecciones al hacer tu reserva. Te recomendamos revisar cuidadosamente las
+          condiciones de cancelación al hacer la reserva, ya que estas pueden influir en los cargos por cancelación.
+        </p>
+        <h3>Métodos de Pago:</h3>
+        <p>
+          Aceptamos una variedad de métodos de pago, que incluyen tarjetas de crédito (Visa, MasterCard, American Express), transferencias bancarias y efectivo.
+          Por favor, verifica con anticipación si tienes alguna preferencia específica.
+        </p>
+        <h3>Política de Niños y Camas Supletorias:</h3>
+        <p>
+          Los niños son bienvenidos en el hotel. La disponibilidad de camas supletorias y cunas puede variar según la habitación y debe ser confirmada al hacer
+          la reserva. Algunas habitaciones tienen capacidad máxima y no se pueden añadir camas supletorias.
+        </p>
+        <h3>Política de Mascotas:</h3>
+        <p>
+          Por lo general, no se admiten mascotas en nuestras instalaciones, a menos que se haga una disposición especial con antelación. Te recomendamos ponerte
+          en contacto con nosotros para obtener más información sobre nuestras políticas de mascotas.
+        </p>
+        <h3>Impuestos y Tarifas Adicionales:</h3>
+        <p>
+          Los impuestos locales y las tarifas de resort (si aplican) no siempre están incluidos en el precio de la habitación. Asegúrate de revisar los detalles
+          de tu reserva para conocer todos los cargos adicionales. Te recomendamos ponerse en contacto directamente con el hotel o visitar su página web oficial
+          para obtener información actualizada y específica sobre las condiciones de reserva, ya que estas políticas pueden estar sujetas a cambios o
+          variaciones.
+        </p>
         <!-- formulario de reserva (elegir fecha de llegada/salida, tipo de habitacion, etc) -->
       </section>
       <section>
         <h2>contacto</h2>
-        <!-- direccion del hotel, telefono, email -->
+        <div class="d-flex justify-content-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d957618.9642669987!2d-87.73504426954952!3d20.35404646645743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e4d76264b36e3%3A0x7db660e55fb2bd60!2sRiviera%20Maya%2C%20Q.R.%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sar!4v1695871345850!5m2!1ses-419!2sar"
+            width="1000"
+            height="500"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p>Hotel Oasis</p>
+        <p>Dirección: Calle de la Playa, 123</p>
+        <p>Playa Serenidad, Costa del Sol</p>
+        <p>Código Postal: 98765</p>
+        <p>Paraíso del Mar</p>
+        <p>Teléfono: +1 (555) 555-5555</p>
+        <p>Correo Electrónico:</p>
+        <a href="info@hotel-oasis-serenidad.com">info@hotel-oasis-serenidad.com</a>
         <!-- formulario para enviar una consulta al hotel (input nombre, email, consulta y boton de enviar) -->
       </section>
     </main>
     <footer>
-      <!-- logo hotel -->
-      <!-- redes sociales -->
-      <ul>
-        <li>nosotros</li>
-        <li>habitaciones</li>
-        <li>servicios</li>
-        <li>galeria</li>
-        <li>reservas</li>
-        <li>contacto</li>
-      </ul>
-      <!-- texto copyright -->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="img/logo-azul.png" alt="logo" class="footer-logo" />
+          </div>
+          <div class="col">
+            <a href="https://www.facebook.com/HotelOasisSerenidad">Facebook</a>
+            <a href="https://www.instagram.com/hotel_oasis_serenidad">Instagram</a>
+          </div>
+          <div class="col">
+            <ul>
+              <li>nosotros</li>
+              <li>habitaciones</li>
+              <li>servicios</li>
+              <li>galeria</li>
+              <li>reservas</li>
+              <li>contacto</li>
+            </ul>
+          </div>
+          <div class="d-flex justify-content-center border-top">
+            <p>Copyright © 1995 Hotel Oasis. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
     </footer>
+    <script src="https://kit.fontawesome.com/fd6ed05c21.js" crossorigin="anonymous"></script>
   </body>
 </html>
