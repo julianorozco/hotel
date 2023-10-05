@@ -17,234 +17,504 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Menú navegable  -->
     <header>
-      <nav>
-        <img src="img/logo-azul.PNG" alt="logo" class="logo" />
-        <ul>
-          <li>nosotros</li>
-          <li>habitaciones</li>
-          <li>servicios</li>
-          <li>galeria</li>
-          <li>reservas</li>
-          <li>contacto</li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a href="index.html">
+            <img src="img/logo-azul.PNG" alt="logo" class="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Nosotros menú  -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#nosotros">Nosotros</a>
+              </li>
+              <!-- Habitaciones menú -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#habitaciones"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Habitaciones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#estandar">Habitación Estándar</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#superior">Habitación Superior</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#familiar">Suite Familiar</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#presidencial">Suite Presidencial</a></li>
+                </ul>
+              </li>
+              <!-- Servicios menú -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#servicios" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Servicios </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#restaurante">Restaurante Gourmet</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#spa">Spa de Clase Mundial</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#acuatico">Actividades Acuáticas</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#gimnasio">Gimnasio</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#club">Club Privado</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#eventos">Salon para eventos</a></li>
+                </ul>
+              </li>
+              <!-- Galeria menú -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#galeria">Galería</a>
+              </li>
+              <!-- Reserva menú -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#reserva">Reservas</a>
+              </li>
+              <!-- Contacto menú -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+            <!-- Boton registrar -->
+            <form class="d-flex"></form>
+            <button class="btn btn-outline-secondary m-1" type="submit">Registrarse</button>
+            <!-- Boton iniciar sesión -->
+            <form class="d-flex"></form>
+            <button class="btn btn-outline-secondary m-1" type="submit">Iniciar sesión</button>
+          </div>
+        </div>
       </nav>
-      <!-- imagen de portada o carrusel de fotos -->
-      <img src="img/header/imgPortada1.jpg" alt="imagen" />
+      <!-- Carousel de fotos -->
+      <div class="carousel">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/header/imgPortada1.jpg" class="img-fluid d-block" alt="imagen" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/header/imgPortada2.jpg" class="img-fluid d-block" alt="imagen" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/header/imgPortada3.jpg" class="img-fluid d-block" alt="imagen" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/header/imgPortada4.jpg" class="img-fluid d-block" alt="imagen" />
+            </div>
+          </div>
+          <!-- Controles de carousel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </header>
     <main class="container">
-      <section>
-        <h2>nosotros</h2>
-        <!-- breve texto de presentacion del hotel (donde se encuentra, desde que año estan, etc) que habitaciones y servicios cuenta -->
-        <img src="img/header/imgPortada2.jpg" alt="imagen" />
-        <p>
-          ¡Bienvenidos al Hotel Oasis en la hermosa ciudad de Playa Serena! Desde 1995, hemos sido un destino de elección para viajeros que buscan una
-          experiencia única en la costa este. Nuestra ubicación privilegiada en las costas de la Riviera Maya te ofrece un escape perfecto del ajetreo y el
-          bullicio de la vida cotidiana.
-        </p>
-        <p>
-          Nuestro hotel cuenta con una amplia variedad de habitaciones para satisfacer todas tus necesidades. Desde acogedoras habitaciones estándar hasta
-          lujosas suites frente al mar, cada una de nuestras habitaciones está diseñada pensando en tu comodidad y relajación. Disfruta de vistas panorámicas al
-          océano, balcones privados y todas las comodidades modernas que necesitas para una estancia inolvidable.
-        </p>
-        <p>
-          En el Hotel Oasis, te mimamos con una amplia gama de servicios de primera clase. Relájate en nuestra piscina infinita con vista al mar, disfruta de
-          una cena exquisita en nuestro restaurante gourmet y desconecta en nuestro spa de clase mundial. Para los amantes de la aventura, ofrecemos una
-          variedad de actividades emocionantes, desde deportes acuáticos hasta excursiones a la selva tropical.
-        </p>
-        <p>
-          Nuestro compromiso es brindarte una experiencia única y memorable, donde puased relajarte y recargar energías mientras te sumerges en la belleza
-          natural de este paraíso. ¡Esperamos darte la bienvenida pronto en el Hotel Oasis para que puedas vivir la escapada perfecta en Playa Serena!
-        </p>
-      </section>
-      <section>
-        <h2>habitaciones</h2>
-        <!-- cards que muestren una foto por cada tipo de habitacion con su nombre (doble, triple, cuadruple), su nivel (estandar, superior), lista de lo que tiene habitacion -->
-        <article>
-          <img src="img/habitacion/roomEstandar.jpg" alt="imagen" />
-          <h3>Habitación Estándar:</h3>
-          <p>
-            Nuestras habitaciones estándar son acogedoras y cómodas, ideales para aquellos que buscan una estancia tranquila y sin complicaciones. Disponen de
-            una cama doble, baño privado y un pequeño escritorio. Perfectas para viajeros individuales o parejas que valoran la simplicidad.
-          </p>
-        </article>
-        <article>
-          <img src="img/habitacion/roomSuperior.jpg" alt="imagen" />
-          <h3>Habitación Superior:</h3>
-          <p>
-            Las habitaciones superiores ofrecen un toque de elegancia adicional. Disfruta de una cama king-size, un baño espacioso con bañera de hidromasaje,
-            minibar, y un balcón privado con vistas panorámicas al mar. Perfectas para una escapada romántica o para quienes buscan una experiencia más lujosa.
-          </p>
-        </article>
-        <article>
-          <img src="img/habitacion/roomFamilia.jpg" alt="imagen" />
-          <h3>Suite Familiar:</h3>
-          <p>
-            Nuestras suites familiares son amplias y versátiles, diseñadas para grupos o familias. Ofrecen dos habitaciones interconectadas, una con una cama
-            king-size y la otra con dos camas individuales. Además, cuentan con un área de estar, dos baños completos y una terraza privada. Ideal para unas
-            vacaciones familiares cómodas y memorables.
-          </p>
-        </article>
-        <article>
-          <img src="img/habitacion/roomPresidencial.jpg" alt="imagen" />
-          <h3>Suite Presidencial:</h3>
-          <p>
-            La cúspide del lujo en el Hotel Oasis, nuestras suites presidenciales son un oasis de elegancia y comodidad. Cada suite cuenta con una habitación
-            principal con cama king-size, un amplio salón, comedor, cocina completa y una terraza privada con jacuzzi. Además, disfruta de servicios exclusivos
-            como mayordomo personal y acceso al club privado del hotel.
-          </p>
-        </article>
-        <p>Todas nuestras habitaciones y suites incluyen las siguientes comodidades estándar:</p>
-        <ul>
-          <li>Aire acondicionado para un ambiente agradable.</li>
-          <li>Conexión Wi-Fi de alta velocidad para mantenerse conectado.</li>
-          <li>Servicio de limpieza diario para mantener la habitación impecable.</li>
-          <li>Artículos de tocador de calidad para tu comodidad.</li>
-          <li>Televisión de pantalla plana con canales por cable.</li>
-          <li>Caja de seguridad para guardar objetos de valor de forma segura.</li>
-          <li>Minibar surtido con bebidas y aperitivos.</li>
-        </ul>
-        <p>
-          En el Hotel Oasis, nuestro objetivo es ofrecer una variedad de opciones de alojamiento para satisfacer las preferencias de todos nuestros huéspedes,
-          desde aquellos que buscan comodidades básicas hasta aquellos que desean una experiencia de lujo. ¡Esperamos que disfrutes de tu estancia con nosotros!
-        </p>
-      </section>
-      <section>
-        <h2>servicios</h2>
-        <!-- listado de todos los  servicios adicionales que ofrece el hotel (desayuno, restaurant, pileta, spa, etc) -->
-        <img src="img/servicio/restaurante.jpg" alt="imagen" />
-        <h3>Restaurante Gourmet</h3>
-        Nuestro restaurante gourmet ofrece una experiencia culinaria excepcional. Disfruta de una deliciosa selección de platos internacionales y locales en un
-        ambiente elegante y acogedor.
-        <img src="img/servicio/spa.jpg" alt="imagen" />
-        <h3>Spa de Clase Mundial</h3>
-        Relájate y rejuvenece en nuestro spa de clase mundial. Ofrecemos una variedad de tratamientos terapéuticos, masajes y terapias de bienestar para que te
-        sientas renovado y revitalizado. Masajes Relajantes: Disfruta de una variedad de masajes relajantes que incluyen opciones como masaje sueco, masaje de
-        tejido profundo y aromaterapia para aliviar la tensión y promover la relajación.
-        <ul>
-          <li>Tratamientos Faciales</li>
-          <li>Baños de Vapor y Sauna</li>
-          <li>Jacuzzi y Piscina de Hidroterapia</li>
-          <li>Tratamientos de Belleza</li>
-        </ul>
-        <img src="img/servicio/piscina.jpg" alt="imagen" />
-        <h3>Actividades Acuáticas</h3>
-        <p>
-          Para los amantes de la aventura, ofrecemos una amplia gama de actividades acuáticas, como snorkel, buceo, kayak y excursiones en barco. Descubre la
-          belleza submarina de la zona.
-        </p>
-        <img src="img/servicio/gym.jpg" alt="imagen" />
-        <h3>Gimnasio</h3>
-        <p>Mantén tu rutina de ejercicios en nuestro gimnasio completamente equipado con modernas máquinas de entrenamiento y pesas libres.</p>
-        <img src="img/servicio/clubPrivado.jpg" alt="imagen" />
-        <h3>Club Privado</h3>
-        <p>
-          Los huéspedes de suites presidenciales tienen acceso exclusivo a nuestro club privado, que ofrece desayuno gourmet, aperitivos durante el día y
-          bebidas premium.
-        </p>
-        <img src="img/servicio/salonEventos.jpg" alt="imagen" />
-        <h3>Salon para eventos</h3>
-        <p>
-          Organizamos eventos especiales y bodas en un entorno idílico frente al mar. Nuestro equipo de planificación de eventos se encargará de todos los
-          detalles para que tu ocasión sea inolvida
-        </p>
-      </section>
-      <section>
-        <h2>galería</h2>
-        <!-- galeria con fotos del hotel, habitaciones, restaurant, pileta, etc -->
-      </section>
-      <section>
-        <h2>reservas</h2>
-        <!-- condiciones del hotel (horarios de checkin/checkout, horario desayuno, metodos de pago, etc) -->
-        <h3>Check-In y Check-Out:</h3>
-        <p>
-          El horario de check-in es a partir de las 15:00 horas (3:00 PM) para asegurarnos de que tu habitación esté lista y en perfectas condiciones para tu
-          llegada. El check-out debe realizarse antes de las 12:00 horas (12:00 PM) del día de salida. Si deseas un check-out tardío, por favor, consulta con
-          recepción la disponibilidad y las tarifas adicionales.
-        </p>
-        <h3>Horario de Desayuno:</h3>
-        <p>
-          Nuestro desayuno se sirve diariamente en el restaurante desde las 7:00 AM hasta las 10:30 AM. Ofrecemos una variedad de opciones de desayuno, desde
-          platos calientes hasta buffet continental.
-        </p>
-        <h3>Política de Cancelación:</h3>
-        <p>
-          Nuestra política de cancelación varía según el tipo de tarifa que selecciones al hacer tu reserva. Te recomendamos revisar cuidadosamente las
-          condiciones de cancelación al hacer la reserva, ya que estas pueden influir en los cargos por cancelación.
-        </p>
-        <h3>Métodos de Pago:</h3>
-        <p>
-          Aceptamos una variedad de métodos de pago, que incluyen tarjetas de crédito (Visa, MasterCard, American Express), transferencias bancarias y efectivo.
-          Por favor, verifica con anticipación si tienes alguna preferencia específica.
-        </p>
-        <h3>Política de Niños y Camas Supletorias:</h3>
-        <p>
-          Los niños son bienvenidos en el hotel. La disponibilidad de camas supletorias y cunas puede variar según la habitación y debe ser confirmada al hacer
-          la reserva. Algunas habitaciones tienen capacidad máxima y no se pueden añadir camas supletorias.
-        </p>
-        <h3>Política de Mascotas:</h3>
-        <p>
-          Por lo general, no se admiten mascotas en nuestras instalaciones, a menos que se haga una disposición especial con antelación. Te recomendamos ponerte
-          en contacto con nosotros para obtener más información sobre nuestras políticas de mascotas.
-        </p>
-        <h3>Impuestos y Tarifas Adicionales:</h3>
-        <p>
-          Los impuestos locales y las tarifas de resort (si aplican) no siempre están incluidos en el precio de la habitación. Asegúrate de revisar los detalles
-          de tu reserva para conocer todos los cargos adicionales. Te recomendamos ponerse en contacto directamente con el hotel o visitar su página web oficial
-          para obtener información actualizada y específica sobre las condiciones de reserva, ya que estas políticas pueden estar sujetas a cambios o
-          variaciones.
-        </p>
-        <!-- formulario de reserva (elegir fecha de llegada/salida, tipo de habitacion, etc) -->
-      </section>
-      <section>
-        <h2>contacto</h2>
-        <div class="d-flex justify-content-center">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d957618.9642669987!2d-87.73504426954952!3d20.35404646645743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e4d76264b36e3%3A0x7db660e55fb2bd60!2sRiviera%20Maya%2C%20Q.R.%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sar!4v1695871345850!5m2!1ses-419!2sar"
-            width="1000"
-            height="500"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <p>Hotel Oasis</p>
-        <p>Dirección: Calle de la Playa, 123</p>
-        <p>Playa Serenidad, Costa del Sol</p>
-        <p>Código Postal: 98765</p>
-        <p>Paraíso del Mar</p>
-        <p>Teléfono: +1 (555) 555-5555</p>
-        <p>Correo Electrónico:</p>
-        <a href="info@hotel-oasis-serenidad.com">info@hotel-oasis-serenidad.com</a>
-        <!-- formulario para enviar una consulta al hotel (input nombre, email, consulta y boton de enviar) -->
-      </section>
-    </main>
-    <footer>
-      <div class="container">
+      <section class="nosotros">
+        <h2 id="nosotros" class="mb-5">nosotros</h2>
+        <!-- Imagen de nosotros -->
         <div class="row">
           <div class="col">
-            <img src="img/logo-azul.png" alt="logo" class="footer-logo" />
+            <img class="img-thumbnail img-fluid mx-auto d-block" src="img/header/imgPortada2.jpg" alt="imagen" />
           </div>
-          <div class="col">
-            <a href="https://www.facebook.com/HotelOasisSerenidad">Facebook</a>
-            <a href="https://www.instagram.com/hotel_oasis_serenidad">Instagram</a>
+        </div>
+        <!-- Texto de  nosotros -->
+        <div class="row">
+          <div class="col text-justify my-5">
+            <p>
+              ¡Bienvenidos al Hotel Oasis en la hermosa ciudad de Playa Serena! Desde 1995, hemos sido un destino de elección para viajeros que buscan una
+              experiencia única en la costa este. Nuestra ubicación privilegiada en las costas de la Riviera Maya te ofrece un escape perfecto del ajetreo y el
+              bullicio de la vida cotidiana.
+            </p>
+            <p>
+              Nuestro hotel cuenta con una amplia variedad de habitaciones para satisfacer todas tus necesidades. Desde acogedoras habitaciones estándar hasta
+              lujosas suites frente al mar, cada una de nuestras habitaciones está diseñada pensando en tu comodidad y relajación. Disfruta de
+              <span class="negrita"> vistas panorámicas </span> al océano, balcones privados y todas las comodidades modernas que necesitas para una estancia
+              inolvidable.
+            </p>
+            <p>
+              En el Hotel Oasis, te mimamos con una amplia gama de <span class="negrita">servicios de primera clase</span>. Relájate en nuestra piscina infinita
+              con vista al mar, disfruta de una cena exquisita en nuestro restaurante gourmet y desconecta en nuestro spa de clase mundial. Para los amantes de
+              la aventura, ofrecemos una variedad de actividades emocionantes, desde deportes acuáticos hasta excursiones a la selva tropical.
+            </p>
+            <p>
+              Nuestro compromiso es brindarte una experiencia única y memorable, donde puased relajarte y recargar energías mientras te sumerges en la belleza
+              natural de este paraíso.
+              <span class="negrita">¡Esperamos darte la bienvenida pronto en el Hotel Oasis para que puedas vivir la escapada perfecta en Playa Serena!</span>
+            </p>
           </div>
-          <div class="col">
+        </div>
+      </section>
+      <section class="container-fluid">
+        <!-- Habitacion estandar-->
+        <h2 id="habitaciones">Habitaciones</h2>
+        <div class="container my-4">
+          <div class="row bg-light px-4">
+            <div class="col-6">
+              <img src="img/habitacion/roomEstandar.jpg" alt="imagen" width="600" class="img-fluid my-4" />
+            </div>
+            <div class="col-6">
+              <h3 id="estandar" class="text-center pt-4 my-5">Habitación Estándar:</h3>
+              <p class="mt-4 mx-auto">
+                Nuestras habitaciones estándar son acogedoras y cómodas, ideales para aquellos que buscan una estancia tranquila y sin complicaciones. Disponen
+                de una cama doble, baño privado y un pequeño escritorio. Perfectas para viajeros individuales o parejas que valoran la simplicidad.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Habitacion Superior-->
+        <div class="container my-4">
+          <div class="row bg-light px-4">
+            <div class="col-6">
+              <h3 id="superior" class="text-center pt-4 my-5">Habitación Superior:</h3>
+              <p class="mt-4 mx-auto">
+                Las habitaciones superiores ofrecen un toque de elegancia adicional. Disfruta de una cama king-size, un baño espacioso con bañera de
+                hidromasaje, minibar, y un balcón privado con vistas panorámicas al mar. Perfectas para una escapada romántica o para quienes buscan una
+                experiencia más lujosa.
+              </p>
+            </div>
+            <div class="col-6">
+              <img src="img/habitacion/roomSuperior.jpg" alt="imagen" width="600" class="img-fluid my-4" />
+            </div>
+          </div>
+        </div>
+        <!-- Habitacion familiar-->
+        <div class="container my-4">
+          <div class="row bg-light px-4">
+            <div class="col-6">
+              <img src="img/habitacion/roomFamilia.jpg" alt="imagen" width="600" class="img-fluid my-4" />
+            </div>
+            <div class="col-6">
+              <h3 id="familiar" class="text-center pt-4 my-5">Suite Familiar:</h3>
+              <p class="mt-4 mx-auto">
+                Nuestras suites familiares son amplias y versátiles, diseñadas para grupos o familias. Ofrecen dos habitaciones interconectadas, una con una
+                cama king-size y la otra con dos camas individuales. Además, cuentan con un área de estar, dos baños completos y una terraza privada. Ideal para
+                unas vacaciones familiares cómodas y memorables.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Habitacion Presidencial -->
+        <div class="container my-4">
+          <div class="row bg-light px-4">
+            <div class="col-6">
+              <h3 id="presidencial" class="text-center pt-4 my-5">Suite Presidencial:</h3>
+              <p class="mt-4 mx-auto">
+                La cúspide del lujo en el Hotel Oasis, nuestras suites presidenciales son un oasis de elegancia y comodidad. Cada suite cuenta con una
+                habitación principal con cama king-size, un amplio salón, comedor, cocina completa y una terraza privada con jacuzzi. Además, disfruta de
+                servicios exclusivos como mayordomo personal y acceso al club privado del hotel.
+              </p>
+            </div>
+            <div class="col-6">
+              <img src="img/habitacion/roomPresidencial.jpg" alt="imagen" width="600" class="img-fluid my-4" />
+            </div>
+          </div>
+        </div>
+        <div class="p-1">
+          <p class="text-justify my-3 fw-bold">Todas nuestras habitaciones y suites incluyen las siguientes comodidades estándar:</p>
+          <div class="my-5 d-flex justify-content-center">
             <ul>
-              <li>nosotros</li>
-              <li>habitaciones</li>
-              <li>servicios</li>
-              <li>galeria</li>
-              <li>reservas</li>
-              <li>contacto</li>
+              <li><i class="fa-solid fa-wind"></i>Aire acondicionado para un ambiente agradable.</li>
+              <li><i class="fa-solid fa-wifi"></i>Conexión Wi-Fi de alta velocidad para mantenerse conectado.</li>
+              <li><i class="fa-solid fa-hand-sparkles"></i>Servicio de limpieza diario para mantener la habitación impecable.</li>
+              <li><i class="fa-solid fa-soap"></i>Artículos de tocador de calidad para tu comodidad.</li>
+              <li><i class="fa-solid fa-tv"></i>Televisión de pantalla plana con canales por cable.</li>
+              <li><i class="fa-solid fa-lock"></i>Caja de seguridad para guardar objetos de valor de forma segura.</li>
+              <li><i class="fa-solid fa-wine-bottle"></i>Minibar surtido con bebidas y aperitivos.</li>
             </ul>
           </div>
+        </div>
+      </section>
+      <section class="contenedor">
+        <h2 id="servicios">servicios</h2>
+        <!-- Restaurante Gourmet, Spa de Clase Mundial -->
+        <div class="row my-3 mx-auto">
+          <div class="col-sm-6">
+            <div class="card text-center my-3 mx-auto" id="restaurante">
+              <img src="img/servicio/restaurante.jpg" class="card-img-top" alt="imagen" />
+              <div class="card-body">
+                <h5 class="card-title my-3 mx-auto fw-bold">Restaurante Gourmet</h5>
+                <p class="card-text my-5 mx-auto">
+                  Nuestro restaurante gourmet ofrece una experiencia culinaria excepcional. Disfruta de una deliciosa selección de platos internacionales y
+                  locales en un ambiente elegante y acogedor.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card text-center my-3 mx-auto" id="spa">
+              <img src="img/servicio/spa.jpg" class="card-img-top" alt="imagen" />
+              <div class="card-body">
+                <h5 class="card-title my-3 mx-auto negrita">Spa de Clase Mundial</h5>
+                <p class="card-text my-5 mx-auto">
+                  Relájate y rejuvenece en nuestro spa de clase mundial. Ofrecemos una variedad de tratamientos terapéuticos, masajes y terapias de bienestar
+                  para que te sientas renovado y revitalizado.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Actividades Acuáticas, Gimnasio-->
+        <div class="row my-3 mx-auto">
+          <div class="col-sm-6">
+            <div class="card text-center my-3 mx-auto" id="eventos">
+              <img src="img/servicio/Blog-Main-Image-3-700x467.png" class="card-img-top" alt="imagen" />
+              <div class="card-body">
+                <h5 class="card-title my-3 mx-auto negrita">Salón para eventos</h5>
+                <p class="card-text my-2 mx-auto">
+                  Nuestro restaurante gourmet ofrece una experiencia culinaria excepcional. Disfruta de una deliciosa selección de platos internacionales y
+                  locales en un ambiente elegante y acogedor.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card text-center my-3 mx-auto" id="gimnasio">
+              <img src="img/servicio/gym.jpg" class="card-img-top" alt="imagen" />
+              <div class="card-body">
+                <h5 class="card-title my-3 mx-auto negrita">Gimnasio</h5>
+                <p class="card-text my-4 mx-auto">
+                  Mantén tu rutina de ejercicios en nuestro gimnasio completamente equipado con modernas máquinas de entrenamiento y pesas libres.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Club Privado, Salon para eventos-->
+        <div class="row my-3 mx-auto">
+          <div class="col-sm-6">
+            <div class="card text-center my-3 mx-auto" id="club">
+              <img src="img/servicio/clubPrivado.jpg" class="card-img-top" alt="imagen" />
+              <div class="card-body">
+                <h5 class="card-title my-4 mx-auto negrita">Club Privado</h5>
+                <p class="card-text my-4 mx-auto">
+                  Los huéspedes de suites presidenciales tienen acceso exclusivo a nuestro club privado, que ofrece desayuno gourmet, aperitivos durante el día
+                  y bebidas premium.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card text-center my-3 mx-auto" id="acuatico">
+              <img src="img/servicio/piscina.jpg" class="card-img-top" alt="imagen" />
+              <div class="card-body">
+                <h5 class="card-title my-4 mx-auto negrita">Actividades Acuáticas</h5>
+                <p class="card-text my-4 mx-auto">
+                  Para los amantes de la aventura, ofrecemos una amplia gama de actividades acuáticas, como snorkel, buceo, kayak y excursiones en barco.
+                  Descubre la belleza submarina de la zona.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!--Galería de fotos-->
+        <h2 id="galeria">galería</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 imagen">
+              <a href="img/galeria/1.jpg"><img src="img/galeria/1.jpg" alt="" class="img-fluid rounded" /></a>
+            </div>
+            <div class="col-sm-4 imagen">
+              <a href="img/galeria/2.jpg"><img src="img/galeria/2.jpg" alt="" class="img-fluid rounded" /></a>
+            </div>
+            <div class="col-sm-4 imagen">
+              <a href="img/galeria/3.jpg"><img src="img/galeria/3.jpg" alt="" class="img-fluid rounded" /></a>
+            </div>
+            <div class="col-sm-4 imagen">
+              <a href="img/galeria/4.jpg"><img src="img/galeria/4.jpg" alt="" class="img-fluid rounded" /></a>
+            </div>
+            <div class="col-sm-4 imagen">
+              <a href="img/galeria/5.jpg"><img src="img/galeria/5.jpg" alt="" class="img-fluid rounded" /></a>
+            </div>
+            <div class="col-sm-4 imagen">
+              <a href="img/galeria/6.jpg"><img src="img/galeria/6.jpg" alt="" class="img-fluid rounded" /></a>
+            </div>
+            <div class="col-sm-4 imagen">
+              <a href="img/galeria/7.jpg"><img src="img/galeria/7.jpg" alt="" class="img-fluid rounded" /></a>
+            </div>
+            <div class="col-sm-4 imagen">
+              <a href="img/galeria/8.jpg"><img src="img/galeria/8.jpg" alt="" class="img-fluid rounded" /></a>
+            </div>
+            <div class="col-sm-4 imagen">
+              <a href="img/galeria/9.jpg"><img src="img/galeria/9.jpg" alt="" class="img-fluid rounded" /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!--Reservas-->
+        <h2 id="reserva">reservas</h2>
+        <div class="container bg-light">
+          <div class="row">
+            <div class="col-6">
+              <h3>Check-In y Check-Out</h3>
+              <p>
+                El horario de check-in es a partir de las 15:00 horas (3:00 PM) para asegurarnos de que tu habitación esté lista y en perfectas condiciones para
+                tu llegada. El check-out debe realizarse antes de las 12:00 horas (12:00 PM) del día de salida. Si deseas un check-out tardío, por favor,
+                consulta con recepción la disponibilidad y las tarifas adicionales.
+              </p>
+              <h3>Política de Cancelación</h3>
+              <p>
+                Nuestra política de cancelación varía según el tipo de tarifa que selecciones al hacer tu reserva. Te recomendamos revisar cuidadosamente las
+                condiciones de cancelación al hacer la reserva, ya que estas pueden influir en los cargos por cancelación.
+              </p>
+              <h3>Política de Mascotas</h3>
+              <p>
+                Por lo general, no se admiten mascotas en nuestras instalaciones, a menos que se haga una disposición especial con antelación. Te recomendamos
+                ponerte en contacto con nosotros para obtener más información sobre nuestras políticas de mascotas.
+              </p>
+            </div>
+            <div class="col-6">
+              <h3>Horario de Desayuno</h3>
+              <p>
+                Nuestro desayuno se sirve diariamente en el restaurante desde las <span class="negrita">7:00 AM hasta las 10:30 AM</span>. Ofrecemos una
+                variedad de opciones de desayuno, desde platos calientes hasta buffet continental.
+              </p>
+              <h3>Métodos de Pago</h3>
+              <p>
+                Aceptamos una variedad de métodos de pago, que incluyen <span class="negrita">tarjetas de crédito</span> (Visa, MasterCard, American Express),
+                <span class="negrita">transferencias bancarias y efectivo</span>. Por favor, verifica con anticipación si tienes alguna preferencia específica.
+              </p>
+              <h3>Impuestos y Tarifas Adicionales</h3>
+              <p>
+                Los impuestos locales y las tarifas de resort (si aplican) no siempre están incluidos en el precio de la habitación. Asegúrate de revisar los
+                detalles de tu reserva para conocer todos los cargos adicionales. Te recomendamos ponerse en contacto directamente con el hotel o visitar su
+                página web oficial para obtener información actualizada y específica sobre las condiciones de reserva, ya que estas políticas pueden estar
+                sujetas a cambios o variaciones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!--Contacto-->
+        <h2 id="contacto">contacto</h2>
+        <div class="container p-4">
+          <div class="row">
+            <div class="d-flex justify-content-center col-8">
+              <!--Mapa de Google-->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d957618.9642669987!2d-87.73504426954952!3d20.35404646645743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e4d76264b36e3%3A0x7db660e55fb2bd60!2sRiviera%20Maya%2C%20Q.R.%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sar!4v1695871345850!5m2!1ses-419!2sar"
+                width="1000"
+                height="500"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-4">
+              <div>
+                <!--Datos de contacto-->
+                <h3>Datos</h3>
+                <ul>
+                  <li><i class="fa-solid fa-location-dot"></i>Calle de la Playa 123 - Playa Serenidad</li>
+                  <li><i class="fa-solid fa-phone"></i>+1 (555) 555-5555</li>
+                  <li><i class="fa-solid fa-envelope"></i><a href="mailto:info@hotel-oasis-serenidad.com">info@hotel-oasis-serenidad.com</a></li>
+                </ul>
+              </div>
+              <div>
+                <!--Redes sociales-->
+                <h3>REDES SOCIALES</h3>
+                <div class="redes">
+                  <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook link-secondary px-3"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram link-secondary px-3"></i></a>
+                  <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube link-secondary px-3"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-light p-4 m-4">
+          <h3>Consultas</h3>
+          <!--Formulario para envío de consultas-->
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="negrita text-secondary">Nombre</label>
+                <input type="text" class="form-control" id="inputPassword4" placeholder="José" />
+              </div>
+              <div class="form-group">
+                <label class="negrita text-secondary">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="jose@ejemplo.com" />
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="negrita text-secondary">Mensaje</label>
+              <textarea class="form-control" rows="4" placeholder="Escríbinos tu consulta.."></textarea>
+            </div>
+            <div class="form-row">
+              <div class="form-check form-switch">
+                <input class="form-check-input newsletter btn-secondary" type="checkbox" id="gridCheck" checked />
+                <label class="form-check-label"> Suscribirse a nuestro newsletter </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-secondary">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="mt-3">
+      <div class="container">
+        <div class="row">
+          <!--Logo de footer-->
+          <div class="col-8">
+            <a href="index.html"><img src="img/logo-azul.png" alt="logo" class="footer-logo img-fluid" /></a>
+          </div>
+          <!--Redes sociales-->
+          <div class="col-4 d-flex justify-content-end">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook link-secondary"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram link-secondary"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube link-secondary"></i></a>
+          </div>
+          <!--Copyright-->
           <div class="d-flex justify-content-center border-top">
-            <p>Copyright © 1995 Hotel Oasis. Todos los derechos reservados.</p>
+            <p>Copyright © 2023 Hotel Oasis - Todos los derechos reservados.</p>
           </div>
         </div>
       </div>
     </footer>
     <script src="https://kit.fontawesome.com/fd6ed05c21.js" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
   </body>
 </html>
